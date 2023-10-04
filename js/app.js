@@ -36,8 +36,10 @@ if (age < 18) {
 } else {
     discount = 0
 }
-userDiscountedPrice = userPricePerKm - discount
+userDiscountedPrice = Math.floor(userPricePerKm - discount)
 console.log(userDiscountedPrice)
 
 
 // - stampare il prezzo che abbiamo calcolato con massimo due decimali  
+const priceDomElement = document.getElementById('price');
+priceDomElement.innerHTML= userDiscountedPrice
