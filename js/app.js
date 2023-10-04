@@ -17,9 +17,27 @@ console.log(userPricePerKm)
 //     - stabilire in delle variabili gli sconti
 //         - calcolare lo sconto da applicare
 //             - sconto = prezzo base * entità sconto / 100
-let discount
+let discount;
+
 //         - applicare lo sconto determindo il prezzo finale
 //             - prezzo scontato = prezzo base - sconto
+let userDiscountedPrice;
+
+if (age < 18) {
+    discount = userPricePerKm * 20 / 100
+    console.log(discount)
+    // userDiscountedPrice = userPricePerKm - discount
+    // console.log(userDiscountedPrice)
+    
+} else if (age > 65) {
+    
+    discount = userPricePerKm * 40 / 100
+    console.log(discount)
+} else {
+    discount = 0
+}
+userDiscountedPrice = userPricePerKm - discount
+console.log(userDiscountedPrice)
 
 
 // - stampare il prezzo che abbiamo calcolato con massimo due decimali  
