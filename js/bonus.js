@@ -21,7 +21,7 @@ console.log(totalPrice);
 
 //         - applicare lo sconto determindo il prezzo finale
 //             - prezzo scontato = prezzo base - sconto
-let userDiscountedPrice;
+// let userDiscountedPrice;
 
 if (age < 18) {
     // discount = totalPrice * 20 / 100
