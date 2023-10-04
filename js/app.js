@@ -36,10 +36,11 @@ if (age < 18) {
 } else {
     discount = 0
 }
-userDiscountedPrice = Math.floor(userPricePerKm - discount)
+userDiscountedPrice = (userPricePerKm - discount)
 console.log(userDiscountedPrice)
+let userDiscountedPriceDecimal = Math.round(userDiscountedPrice * 100) / 100
 
 
 // - stampare il prezzo che abbiamo calcolato con massimo due decimali  
 const priceDomElement = document.getElementById('price');
-priceDomElement.innerHTML= userDiscountedPrice
+priceDomElement.innerHTML= userDiscountedPriceDecimal
